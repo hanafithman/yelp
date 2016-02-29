@@ -19,5 +19,10 @@ module Yelpdemo
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # Set "--no-test-framework" as a default option when running a generator
+    config.generators do |g|
+      g.test_framework false
+    end
   end
 end
