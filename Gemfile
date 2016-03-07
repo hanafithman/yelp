@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
-ruby "2.1.1"
+# Heroku no longer support 2.1.1
+# https://devcenter.heroku.com/articles/ruby-support#supported-runtimes
+ruby "2.1.8"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0'
+gem 'rails', '4.1.14'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 # Use SCSS for stylesheets
