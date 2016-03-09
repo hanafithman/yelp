@@ -52,3 +52,9 @@ group :production do
   gem "rails_12factor"
   gem "pg"
 end
+
+gem "carrierwave"
+#gem "fog-aws"
+gem "fog", "~> 1.3.1"
+gem "figaro"
+gem "mini_magick"
