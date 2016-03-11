@@ -53,8 +53,12 @@ group :production do
   gem "pg"
 end
 
+# Images
 gem "carrierwave"
 #gem "fog-aws"
 gem "fog", "~> 1.3.1"
 gem "figaro"
 gem "mini_magick"
+
+# User accounts
+gem "devise"
