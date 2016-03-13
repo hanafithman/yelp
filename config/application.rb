@@ -28,5 +28,11 @@ module Yelpdemo
     config.generators do |g|
       g.test_framework false
     end
+
+    # https://github.com/plataformatec/responders/issues/94#issuecomment-59538373
+    # gem 'devise', '~> 3.4.0' includes responders as a dependency.
+    # When a scaffold is being generated, the generator used is the responders' generator.
+    # Below will use the Rails' default generator.
+    config.app_generators.scaffold_controller :scaffold_controller
   end
 end
