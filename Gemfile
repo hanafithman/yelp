@@ -62,3 +62,6 @@ gem "mini_magick"
 
 # User accounts
 gem "devise"
+
+# Search
+gem "searchkick"
