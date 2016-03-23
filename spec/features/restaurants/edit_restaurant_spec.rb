@@ -1,4 +1,9 @@
 describe "Editing a restaurant" do
+  before do
+    admin = User.create!(user_attributes(admin: true))
+    sign_in(admin)
+  end
+    
   it "updates the restaurant and shows the restaurant's updated details" do
     # Arrange
     restaurant = Restaurant.create!(restaurant_attributes)

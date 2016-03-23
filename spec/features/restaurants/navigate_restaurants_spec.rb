@@ -17,7 +17,8 @@ describe "Navigating restaurants" do
     visit restaurants_url
 
     # Action
-    page.first("a", text: "Show").click
+    #page.first("a", text: "Show").click
+    page.first("a", text: restaurant.name).click
 
     # Assert
     expect(current_path).to eq(restaurant_path(restaurant))

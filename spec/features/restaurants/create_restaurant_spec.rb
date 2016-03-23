@@ -1,4 +1,9 @@
 describe "Creating a new restaurant" do
+  before do
+    admin = User.create!(user_attributes(admin: true))
+    sign_in(admin)
+  end
+
   it "saves the restaurant and shows the new restaurant's details" do
     # Arrange
     restaurant = Restaurant.new(restaurant_attributes)
@@ -19,6 +24,7 @@ describe "Creating a new restaurant" do
     fill_in "Address", with: restaurant.address
     fill_in "Phone", with: restaurant.phone
     fill_in "Website", with: restaurant.website
+    attach_file "Image", "#{Rails.root}/app/assets/images/restaurant.png"
 
     click_button "Create Restaurant"
 
