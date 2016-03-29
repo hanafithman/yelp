@@ -1,1 +1,11 @@
-<p>Copyright <%= Time.now.year.to_s %> BaseRails</p>
+<br/>
+<br/>
+<p>
+Copyright &copy; 
+<% if Time.now.year > 2016 %>
+  2016-<%= Time.now.year %>. 
+<% else %>
+  2016.
+<% end %>
+Developed by <%= link_to "Waihon Yew", "http://fb.me/waihonpage" %> based on online Ruby on Rails course taught by <%= link_to "BaseRails", "https://www.baserails.com/reviewapp" %>.
+</p>

@@ -65,3 +65,6 @@ gem "devise"
 
 # Search
 gem "searchkick"
+
+# Make sample users with semi-realistic names and email addresses
+gem "faker", "~> 1.6.3"
